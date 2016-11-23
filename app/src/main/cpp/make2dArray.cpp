@@ -15,6 +15,6 @@ bool make2dArray(T ** &x,int numberOfRows, int numberOfColumns)
             x[i] = new int[numberOfColumns];
 
         return true;
-    }
-    catch ( std::bad_alloc ) { return false;}
+    }catch( std::exception e ){ return false;}
+
 }
